@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="paginainicial.html">Pagina Inicial</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>Contato</h1>
+                <img width="550" src="https://clinicadetodos-sp.com.br/wp-content/uploads/2021/02/clinica-de-todos-santo-andre-recepcao-1.jpeg" >
+                
+            </div>
+    
+            <div class="content">
+                <h1>Entre em Contato</h1>
+                <p>Estamos disponíveis para responder às suas perguntas...</p>
+    
+                <ul>
+                    <li>Telefone: (11) 1234-5678</li>
+                    <li>WhatsApp: (11) 98765-4321</li>
+                    <li>Endereço: Rua da Clínica, 123 - Cidade, Estado</li>
+                </ul>
+    
+                <!-- Google Maps Iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-46.789012!3d-23.456789!4smaps_example!5e0!3m2!1sen!2suk!4v1234567890!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+                <!-- Formulário de Contato -->
+                <form action="processar_contato.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+            </div>
+    
+            <div class="footer">
+                Contato +55 (XX) XXXXX-XXXX | Email: contatoclinica@contato.com.br     
+                <br>Clinica Medica e Especialidades | CNPJ XX.XXX.X0X/000X-XX | Desenvolvido por L Studio
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
